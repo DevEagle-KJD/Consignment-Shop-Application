@@ -39,6 +39,7 @@
             this.vendorListBox = new System.Windows.Forms.ListBox();
             this.storeProfitValue = new System.Windows.Forms.Label();
             this.storeProfitLabel = new System.Windows.Forms.Label();
+            this.removeFromCartButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // headerText
@@ -58,7 +59,7 @@
             this.storeItemsListBox.FormattingEnabled = true;
             this.storeItemsListBox.ItemHeight = 20;
             this.storeItemsListBox.Location = new System.Drawing.Point(13, 132);
-            this.storeItemsListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.storeItemsListBox.Margin = new System.Windows.Forms.Padding(4);
             this.storeItemsListBox.Name = "storeItemsListBox";
             this.storeItemsListBox.Size = new System.Drawing.Size(397, 184);
             this.storeItemsListBox.TabIndex = 1;
@@ -91,7 +92,7 @@
             this.shoppingCartListBox.FormattingEnabled = true;
             this.shoppingCartListBox.ItemHeight = 20;
             this.shoppingCartListBox.Location = new System.Drawing.Point(688, 132);
-            this.shoppingCartListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.shoppingCartListBox.Margin = new System.Windows.Forms.Padding(4);
             this.shoppingCartListBox.Name = "shoppingCartListBox";
             this.shoppingCartListBox.Size = new System.Drawing.Size(397, 184);
             this.shoppingCartListBox.TabIndex = 3;
@@ -162,11 +163,23 @@
             this.storeProfitLabel.TabIndex = 10;
             this.storeProfitLabel.Text = "Store:";
             // 
+            // removeFromCartButton
+            // 
+            this.removeFromCartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removeFromCartButton.Location = new System.Drawing.Point(688, 335);
+            this.removeFromCartButton.Name = "removeFromCartButton";
+            this.removeFromCartButton.Size = new System.Drawing.Size(99, 37);
+            this.removeFromCartButton.TabIndex = 11;
+            this.removeFromCartButton.Text = "Remove";
+            this.removeFromCartButton.UseVisualStyleBackColor = true;
+            this.removeFromCartButton.Click += new System.EventHandler(this.removeFromCartButton_Click);
+            // 
             // ConsignmentShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1098, 627);
+            this.Controls.Add(this.removeFromCartButton);
             this.Controls.Add(this.storeProfitLabel);
             this.Controls.Add(this.storeProfitValue);
             this.Controls.Add(this.vendorLabel);
@@ -179,7 +192,7 @@
             this.Controls.Add(this.storeItemsListBox);
             this.Controls.Add(this.headerText);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ConsignmentShop";
             this.Text = "Consignment Shop";
             this.ResumeLayout(false);
@@ -200,6 +213,7 @@
         private System.Windows.Forms.ListBox vendorListBox;
         private System.Windows.Forms.Label storeProfitValue;
         private System.Windows.Forms.Label storeProfitLabel;
+        private System.Windows.Forms.Button removeFromCartButton;
     }
 }
 

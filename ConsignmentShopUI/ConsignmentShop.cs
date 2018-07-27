@@ -126,5 +126,12 @@ namespace ConsignmentShopUI
             cartBinding.ResetBindings(false);
             vendorBinding.ResetBindings(false);
         }
+
+        private void removeFromCartButton_Click(object sender, EventArgs e)
+        {
+            Item selectedItem = (Item)shoppingCartListBox.SelectedItem;
+            cartList.Remove(selectedItem);
+            cartBinding.ResetBindings(false);
+        }
     }
 }
